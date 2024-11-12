@@ -22,6 +22,7 @@ import {
 import { cilPencil, cilTrash } from '@coreui/icons';
 import CIcon from '@coreui/icons-react';
 import api from '../../services/axiosConfig';
+import CategoriaBarChart from './CategoriaBarChart';
 
 const CategoriaList = () => {
   const [categorias, setCategorias] = useState([]);
@@ -80,6 +81,9 @@ const CategoriaList = () => {
   return (
     <CRow>
       <CCol xs={12}>
+        <CRow>
+          <CategoriaBarChart></CategoriaBarChart>
+        </CRow>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>Categorias</strong>
